@@ -8,34 +8,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* html,body{
-    height: 100%;
-    display: grid;
-} */
 body{
     background-color: hsl(233, 47%, 7%);
     font-size: 15px;
     word-spacing: 3px;
 }
-
 main{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 100%;
     padding: 11% 1em;
     text-align: center;
 }
+
 /* Card Container */
 .card-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    /* justify-content: center; */
-    /* margin: 4rem 25%;
-    width: 500px; */
-    /* margin: auto; */
+    align-items: center;   
     max-width: fit-content;
     border-radius: 10px;
     height: fit-content;
@@ -102,9 +91,7 @@ h2{
 }
 
 /* Media Queries */
-
 @media (min-width: 860px) {
-    
     .card-container{
         text-align: start;
         flex-direction: row-reverse;
