@@ -8,15 +8,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,body{
+    width: 100%;
+    height: 100%;
+}
 body{
     background-color: hsl(233, 47%, 7%);
     font-size: 15px;
     word-spacing: 3px;
-}
-main{
-    width: 100%;
-    padding: 11% 1em;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
 }
 
 /* Card Container */
@@ -30,7 +33,6 @@ main{
     height: fit-content;
     text-align: center;
     flex: 0 0 auto;
-    margin: 0 auto;
 }
 
 /* Image */
@@ -81,7 +83,6 @@ h1, h2{
     grid-template-rows: repeat(3,2fr);
     grid-row-gap: 30px;
     margin-top: 40px;
-    
 }
 h2{
     margin-bottom: 7px;
@@ -91,10 +92,15 @@ h2{
 }
 
 /* Media Queries */
-@media (min-width: 1030px) {
+@media (min-width: 1000px) {
+    body{
+        flex-direction: column-reverse;
+        align-items: initial;
+    }
     .card-container{
         text-align: start;
         flex-direction: row-reverse;
+        margin: 0 auto;
     }
     .card{
         width: 500px;
