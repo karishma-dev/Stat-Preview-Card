@@ -18,21 +18,20 @@ body{
     word-spacing: 3px;
     display: flex;
     justify-content: center;
-    align-content: space-around;
     align-items: center;
 }
 
 /* Card Container */
 .card-container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;   
-    max-width: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
     border-radius: 10px;
     height: fit-content;
     text-align: center;
-    flex: 0 0 auto;
+    margin: 0 auto;
 }
 
 /* Image */
@@ -47,7 +46,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode: screen;
-    display: inline;
 }
 
 /* Card */
@@ -100,7 +98,6 @@ h2{
     .card-container{
         text-align: start;
         flex-direction: row-reverse;
-        margin: 0 auto;
     }
     .card{
         width: 500px;
